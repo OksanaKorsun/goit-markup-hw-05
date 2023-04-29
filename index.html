@@ -71,7 +71,9 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-heading">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -83,9 +85,9 @@
           <ul class="features-list list card-set">
             <li class="features-item card-set-item">
               <div class="features-container">
-                  <svg class="features-icon" width="64" height="64">
-                    <use href="./images/icons.svg#icon-antenna-1"></use>
-                  </svg>
+                <svg class="features-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                </svg>
               </div>
               <h3 class="features-subtitle">Strategy</h3>
               <p class="features-text">
@@ -96,9 +98,9 @@
 
             <li class="features-item card-set-item">
               <div class="features-container">
-                  <svg class="features-icon" width="64" height="64">
-                    <use href="./images/icons.svg#icon-clock-1"></use>
-                  </svg>
+                <svg class="features-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
               </div>
               <h3 class="features-subtitle">Punctuality</h3>
               <p class="features-text">
@@ -109,9 +111,9 @@
 
             <li class="features-item card-set-item">
               <div class="features-container">
-                  <svg class="features-icon" width="64" height="64">
-                    <use href="./images/icons.svg#icon-diagram-1"></use>
-                  </svg>
+                <svg class="features-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
               </div>
               <h3 class="features-subtitle">Diligence</h3>
               <p class="features-text">
@@ -122,9 +124,9 @@
 
             <li class="features-item card-set-item">
               <div class="features-container">
-                  <svg class="features-icon" width="64" height="64">
-                    <use href="./images/icons.svg#icon-astronaut-1"></use>
-                  </svg>
+                <svg class="features-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
               </div>
               <h3 class="features-subtitle">Technologies</h3>
               <p class="features-text">
@@ -215,7 +217,6 @@
                       <svg class="socials-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
-              
                     </a>
                   </li>
                   <li class="socials-item">
@@ -577,15 +578,15 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn">
-          <svg class="modal-icon" width="24" height="24">
-            <use href=""></use>
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-hero"></use>
           </svg>
         </button>
       </div>
     </div>
-    
+    <script src="./js/modal.js"></script>
   </body>
 </html>
